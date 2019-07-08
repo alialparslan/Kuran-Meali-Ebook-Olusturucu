@@ -2,55 +2,14 @@ var MD5 = require('md5');
 const request = require('request');
 const fs = require('fs')
 
-var cookies = [
-    {
-        "domain": ".kuranayetleri.net",
-        "expirationDate": 1594112960.641275,
-        "hostOnly": false,
-        "httpOnly": true,
-        "name": "__cfduid",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": true,
-        "session": false,
-        "storeId": "0",
-        "value": "dcd85ec7e2d88c89c7d1a6348282187cd1562576960",
-        "id": 1
-    },
-    {
-        "domain": ".kuranayetleri.net",
-        "expirationDate": 1625653207,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "_ga",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": false,
-        "session": false,
-        "storeId": "0",
-        "value": "GA1.2.913940453.1562576963",
-        "id": 2
-    },
-    {
-        "domain": ".kuranayetleri.net",
-        "expirationDate": 1562667607,
-        "hostOnly": false,
-        "httpOnly": false,
-        "name": "_gid",
-        "path": "/",
-        "sameSite": "no_restriction",
-        "secure": false,
-        "session": false,
-        "storeId": "0",
-        "value": "GA1.2.1460096514.1562576963",
-        "id": 3
-    }
-]
-const cookieJar = request.jar()
-cookies.forEach( cookie => {
-    cookieJar.setCookie(request.cookie(cookie.name + '=' + cookie.value), cookie.domain)
-})
-
+const cookieJar = false
+var cookies = false
+if(cookies){
+    const cookieJar = request.jar()
+    cookies.forEach( cookie => {
+        cookieJar.setCookie(request.cookie(cookie.name + '=' + cookie.value), cookie.domain)
+    })
+}
 
 cacheDir = 'cache/'
 
