@@ -3,3 +3,5 @@ Suleymaniye Vakfı meali dinamik olduğu için suleymaniye.js scripti ile tekrar
 EPUB klasöründe mealler epub formatında bulunmaktadır. Çeşitli internet sitesi aracılığı ile diğer formatlara dönüştürebilirsiniz. (Kindle için mobi'ye çevirmeniz lazım.)
 <br /><br />
 <a href="https://github.com/alialparslan/Kuran-Meali-Ebook-Olusturucu/wiki/Kuran%C4%B1-Kerim-Ebook-%C4%B0ndir">Direkt olarak Epub formatındaki mealleri indirmek için tıklayın.</a>
+<br /><br />
+JSON klasöründen meallerin salt veri halini indirebilirsiniz.
