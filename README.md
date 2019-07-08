@@ -1,1 +1,1 @@
-# Kuran-Meali-Ebook-Olu-turucu
+Mealler Süleymaniye Vakfı meali için <a href="https://www.suleymaniyevakfimeali.com/">Süleymaniye Vakfı Meali</a> sitesinden, diğer mealler ise kuranayetleri.net sitesinden script aracılığı ile indirilmiştir.
