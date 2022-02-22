@@ -6,7 +6,7 @@ function getSure(url){
     return getURL(url).then(body => {
         let dom = new JSDOM(body)
         let doc = dom.window.document
-        var sureName = doc.getElementById('suraNameHeader').innerHTML.trim()
+        var sureName = doc.getElementById('suraNameHeader').textContent.trim()
         let ayetElems = doc.getElementsByClassName('col-sm-12 detail-solblokpad bg-white')
         let ayetler = []
         Array.prototype.forEach.call(ayetElems, elem => {
