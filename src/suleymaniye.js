@@ -14,19 +14,19 @@ function getSure(url){
             if(id == ''){
                 id = 0
             }
-            let text = elem.querySelector('div.trText').innerHTML.split('<br')[0]
-            text = trimAll(text)
-            let tefsir = elem.querySelector('div.trText').querySelector('span')
+            let trText = Array.from(elem.querySelector('div.trText').children)
+            let text = trimAll(trText.shift().textContent)
+            let tefsir = trText.pop().textContent
             if(tefsir){
-                ['span', 'div', 'p'].forEach( tag => {
+                /*['span', 'div', 'p'].forEach( tag => {
                     let elmToRemove = tefsir.querySelector(tag)
                     while(elmToRemove){
                         elmToRemove.outerHTML = elmToRemove.innerHTML
                         elmToRemove = tefsir.querySelector(tag)
                     }
-                })
+                })*/
 
-                tefsir = trimAll(tefsir.innerHTML)
+                tefsir = trimAll(tefsir)
             }else{
                 tefsir = false
             }
